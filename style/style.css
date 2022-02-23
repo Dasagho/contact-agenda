@@ -1,0 +1,35 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    background-color: #D7263D;
+
+}
+
+h1 {
+    margin: 0;
+}
+
+
+.container {
+    background-color: #02182B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+}
+
+.contact-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: grey;
+    z-index: 1;
+}
