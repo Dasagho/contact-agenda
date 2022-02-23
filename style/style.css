@@ -1,55 +1,86 @@
 body {
-    background-color: #02182B;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  background-color: #02182b;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .header {
-    background-color: #D7263D;
-    display: flex;
-    align-items: center;
-    padding-left: 25px;
-    height: 8vh;
-
+  background-color: #d7263d;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  height: 8vh;
 }
 
 h1 {
-    margin: 0;
+  margin: 0;
 }
 
-
-.container {
-    
-    display: flex;
-    flex-direction: column;
-    height: 92vh;
-    z-index: 0;
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 92vh;
 }
 
 .contact {
-    background-color: grey;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 20px 20px 0px 20px;
-    height: 5vh;
-    z-index: 1;
+  background-color: grey;
+  box-shadow: 0 0 15px #030b13;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px 20px 0px 20px;
+  height: 5vh;
+  position: relative;
+  z-index: 1;
+}
+
+.button-container {
+    visibility: hidden;
+}
+.contact-container {
+    margin: 0px 0px 10px 0px;
 }
 
 .contact-info {
-    background-color: grey;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 20px;
-    padding: 20px;
-    margin: -15px 25px 0px 25px;
-    height: 6vh;
-    z-index: 1;
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  padding: 5px 0px 0px 15px;
+  margin: -55px 25px 0px 25px;
+  height: 5vh;
+  position: relative;
+  z-index: -1;
+}
 
+.contact-info span {
+    padding-top: 10px;
+}
+
+.open {
+  animation-name: drop-down;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-direction: alternate;
+}
+
+.show {
+    visibility: visible;
+}
+
+/* The animation code */
+@keyframes drop-down {
+  from {
+    margin-top: -55px;
+  }
+
+  to {
+    margin-top: -15px;
+  }
 }
