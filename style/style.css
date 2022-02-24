@@ -55,6 +55,9 @@ h1 {
   padding: 5px 0px 0px 15px;
   margin: -55px 25px 0px 25px;
   height: 5vh;
+  animation-name: pull-up;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
   position: relative;
   z-index: -1;
 }
@@ -82,5 +85,15 @@ h1 {
 
   to {
     margin-top: -15px;
+  }
+}
+
+@keyframes pull-up {
+  from {
+    margin-top: -15px;
+  }
+
+  to {
+    margin-top: -55px;
   }
 }

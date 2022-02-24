@@ -28,6 +28,7 @@ $app.innerHTML += contact({ name: 'Rosa' });
 $app.querySelectorAll('.contact-container').forEach(cont => {
     cont.addEventListener('click', () => {
         cont.childNodes[3].classList.toggle('open');
-        cont.childNodes[1].childNodes[3].classList.toggle('show')
+        cont.childNodes[1].childNodes[3].classList.toggle('show');
     })
 })
+
